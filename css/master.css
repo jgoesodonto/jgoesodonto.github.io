@@ -1,48 +1,55 @@
-@media (max-width: 400px) {
-  nav {
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    z-index: 100;
-  }
-  .full-view {
-    min-height: 100vh;
-    padding-top: 0;
-  }
-}
-@media (min-width: 401px) {
-  nav {
-    background-color: white;
-    position: sticky;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-  }
-  .full-view {
-    min-height: 95vh;
-    padding-top: 65px;
-  }
+nav {
+  background-color: white;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 0 5px gray;
+  position: fixed;
 }
 nav ul {
   position: relative;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   max-width: 800px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 nav ul li {
   display: block;
   list-style-type: none;
   min-width: 20px;
   text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 10px 5px;
+}
+@media (max-width: 400px) {
+  nav {
+    bottom: 0;
+  }
+  .full-view {
+    min-height: 100vh;
+    padding-top: 0;
+  }
+  nav ul li {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 0;
+  }
+}
+@media (min-width: 401px) {
+  body {
+    padding-top: 85px;
+  }
+  nav {
+    top: 0;
+  }
+  .full-view {
+    min-height: 95vh;
+    padding-top: 65px;
+  }
+  nav ul li {
+    padding: 10px 5px;
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
 nav ul li a:link,
 nav ul li a:visited {
@@ -50,7 +57,7 @@ nav ul li a:visited {
   color: gray;
   outline: none;
 }
-.nav-link:after {
+.nav_link:after {
   position: relative;
   bottom: 0;
   left: 50%;
@@ -61,10 +68,7 @@ nav ul li a:visited {
   content: "";
   transition: 0.3s;
 }
-.nav-link:hover:after {
+.nav_link:hover:after {
   left: 0;
   width: 100%;
-}
-footer {
-  font-size: 10px;
 }
