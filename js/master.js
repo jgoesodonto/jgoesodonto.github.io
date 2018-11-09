@@ -19,8 +19,8 @@ window.addEventListener("scroll", function() {
   var yContato = document.getElementById("contato").offsetTop;
   console.log(window.pageYOffset, yClinica, yEquipe, yContato);
   if (window.pageYOffset < yClinica - 50) {
-    document.getElementById("home_icon").style.backgroundPositionY = '48px';
-    document.getElementById("home_icon").style.backgroundPositionY = '48px';
+    document.getElementById("home_icon").style.backgroundPositionY = '36px';
+    document.getElementById("home_icon").style.backgroundPositionY = '36px';
     document.getElementById("place_icon").style.backgroundPositionY = '0';
     document.getElementById("people_icon").style.backgroundPositionY = '0';
     document.getElementById("phone_icon").style.backgroundPositionY = '0';
@@ -33,7 +33,7 @@ window.addEventListener("scroll", function() {
     window.pageYOffset < yEquipe - 50
   ) {
     document.getElementById("home_icon").style.backgroundPositionY = '0';
-    document.getElementById("place_icon").style.backgroundPositionY = '48px';
+    document.getElementById("place_icon").style.backgroundPositionY = '36px';
     document.getElementById("people_icon").style.backgroundPositionY = '0';
     document.getElementById("phone_icon").style.backgroundPositionY = '0';
     document.getElementById("inicio_link").style.color = 'gray';
@@ -46,7 +46,7 @@ window.addEventListener("scroll", function() {
   ) {
     document.getElementById("home_icon").style.backgroundPositionY = '0';
     document.getElementById("place_icon").style.backgroundPositionY = '0';
-    document.getElementById("people_icon").style.backgroundPositionY = '48px';
+    document.getElementById("people_icon").style.backgroundPositionY = '36px';
     document.getElementById("phone_icon").style.backgroundPositionY = '0';
     document.getElementById("inicio_link").style.color = 'gray';
     document.getElementById("clinicas_link").style.color = 'gray';
@@ -56,7 +56,7 @@ window.addEventListener("scroll", function() {
     document.getElementById("home_icon").style.backgroundPositionY = '0';
     document.getElementById("place_icon").style.backgroundPositionY = '0';
     document.getElementById("people_icon").style.backgroundPositionY = '0';
-    document.getElementById("phone_icon").style.backgroundPositionY = '48px';
+    document.getElementById("phone_icon").style.backgroundPositionY = '36px';
     document.getElementById("inicio_link").style.color = 'gray';
     document.getElementById("clinicas_link").style.color = 'gray';
     document.getElementById("equipe_link").style.color = 'gray';

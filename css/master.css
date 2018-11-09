@@ -36,14 +36,14 @@ nav ul li {
 }
 @media (min-width: 992px) {
   body {
-    padding-top: 85px;
+    padding-top: 100px;
   }
   nav {
     top: 0;
   }
   .full-view {
-    min-height: 95vh;
-    padding-top: 65px;
+    min-height: 100vh;
+    padding-top: 100px;
   }
   nav ul li {
     padding: 10px 5px;
@@ -74,6 +74,9 @@ nav ul li a:visited {
 }
 .icons {
   margin: 0 auto;
+  width: 36px;
+  height: 36px;
+  background-image: url('../img/icones-p.png'); 
 }
 #title {
   font-size: 16px;
