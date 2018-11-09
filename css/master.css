@@ -82,3 +82,7 @@ nav ul li a:visited {
   font-size: 18px;
   letter-spacing: 1px;
 }
+.perfil {
+  width: 200px;
+  border-radius: 50%;
+}
