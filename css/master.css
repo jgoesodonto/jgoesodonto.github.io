@@ -20,7 +20,7 @@ nav ul li {
   min-width: 20px;
   text-align: center;
 }
-@media (max-width: 400px) {
+@media (max-width: 991px) {
   nav {
     bottom: 0;
   }
@@ -34,7 +34,7 @@ nav ul li {
     padding: 10px 0;
   }
 }
-@media (min-width: 401px) {
+@media (min-width: 992px) {
   body {
     padding-top: 85px;
   }
@@ -71,4 +71,11 @@ nav ul li a:visited {
 .nav_link:hover:after {
   left: 0;
   width: 100%;
+}
+.icons {
+  margin: 0 auto;
+}
+#title {
+  font-size: 16px;
+  font-weight: 500;
 }
