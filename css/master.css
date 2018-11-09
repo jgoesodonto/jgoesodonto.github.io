@@ -6,6 +6,10 @@
     bottom: 0;
     z-index: 100;
   }
+  .full-view {
+    min-height: 100vh;
+    padding-top: 0;
+  }
 }
 @media (min-width: 401px) {
   nav {
@@ -14,6 +18,10 @@
     width: 100%;
     top: 0;
     z-index: 100;
+  }
+  .full-view {
+    min-height: 95vh;
+    padding-top: 65px;
   }
 }
 nav ul {
@@ -56,10 +64,6 @@ nav ul li a:visited {
 .nav-link:hover:after {
   left: 0;
   width: 100%;
-}
-.full-view {
-  min-height: 95vh;
-  padding-top: 65px;
 }
 footer {
   font-size: 10px;
