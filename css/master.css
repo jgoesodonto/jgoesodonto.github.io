@@ -1,9 +1,20 @@
-nav {
-  background-color: white;
-  position: sticky;
-  width: 100%;
-  top: 0;
-  z-index: 100;
+@media (max-width: 400px) {
+  nav {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 100;
+  }
+}
+@media (min-width: 401px) {
+  nav {
+    background-color: white;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
 }
 nav ul {
   position: relative;
