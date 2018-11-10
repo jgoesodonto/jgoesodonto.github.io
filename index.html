@@ -12,6 +12,10 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css"
+    />
   </head>
 
   <body id="inicio">
@@ -76,22 +80,77 @@
     <div class="container-fluid">
       <!-- início -->
       <section
-        class="row"
+        class="container-fluid"
         aria-label="apresentação da empresa"
         style="min-height: 100vh;"
       >
-        <div class="container-fluid">
+        <div class="row">
           <div class="w-100 text-center" style="background-color: #d9d9d9">
             <img class="img-fluid" src="./img/logoSte.png" alt="" />
           </div>
           <h1 class="d-none">J & Goes Odontologia</h1>
-          <p class="text-center my-2 p-4 lead">
-            Atuando desde 19__ em São Miguel Paulista e com um novo consultório próximo ao metrô Tatuapé.
+          <p class="my-2 p-4 lead text-center mx-auto">
+            Atuando desde 19__ em São Miguel Paulista e com um novo consultório
+            próximo ao metrô Tatuapé.
           </p>
+        </div>
+        <div class="row bg-light">
           <div
-            class="w-100"
-            style="background-image: url('./img/molde.jpg'); background-repeat: no-repeat; background-size: cover; background-position: 40% 80%; min-height: 500px;"
-          ></div>
+            id="carouselOne"
+            class="carousel slide carousel-fade mx-auto"
+            data-ride="carousel"
+            style="max-width: 800px"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100"
+                  src="./img/tecnica.jpg"
+                  alt="First slide"
+                />
+                <div class="carousel-caption">
+                  <p
+                    class="lead w-100"
+                    style="background-color: rgba(100,100,100,0.5);"
+                  >
+                    Técnica
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="./img/qualidade.jpg"
+                  alt="First slide"
+                />
+                <div class="carousel-caption">
+                  <p
+                    class="lead w-100"
+                    style="background-color: rgba(100,100,100,0.5);"
+                  >
+                    Qualidade
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="./img/inovacao.jpg"
+                  alt="First slide"
+                />
+                <div class="carousel-caption">
+                  <p
+                    class="lead w-100"
+                    style="background-color: rgba(100,100,100,0.5);"
+                  >
+                    Inovação
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- consultórios -->
@@ -156,7 +215,7 @@
               <img class="perfil" src="./img/perfil.jpg" alt="" />
               <h3 class="h4">Alex Washington Góes</h3>
               <p>CROSP 44704</p>
-              <ul class="text-left">
+              <ul class="text-left mx-auto" style="max-width: 450px;">
                 <li>Clínico geral com mais de 26 anos de experiência</li>
                 <li>Odontologia restauradora</li>
                 <li>Cirurgias orais menores</li>
@@ -170,7 +229,7 @@
               <img class="perfil" src="./img/perfil.jpg" alt="" />
               <h3 class="h4">Elke Jakobovitsch Góes</h3>
               <p>CROSP 45137</p>
-              <ul class="text-left">
+              <ul class="text-left mx-auto" style="max-width: 450px;">
                 <li>Mestre e especialista em Ortodontia e Ortopedia Facial</li>
                 <li>Aparelhos removíveis</li>
                 <li>Aparelhos fixos convencionais, autoligados e cerâmicos</li>
@@ -183,7 +242,7 @@
               <img class="perfil" src="./img/perfil.jpg" alt="" />
               <h3 class="h4">Stephan Jakobovitsch Góes</h3>
               <p>CROSP 120082</p>
-              <ul class="text-left">
+              <ul class="text-left mx-auto" style="max-width: 450px;">
                 <li>Clínico geral</li>
                 <li>Odontologia restauradora</li>
                 <li>Cirurgias orais menores</li>
@@ -197,11 +256,7 @@
         </div>
       </section>
       <!-- contato -->
-      <section
-        id="contato"
-        class="row full-view bg-light"
-        aria-label="contato"
-      >
+      <section id="contato" class="row full-view bg-light" aria-label="contato">
         <div class="container">
           <h2 class="text-center">Contato</h2>
           <p>Fone: <a href="tel:01129561435">(11) 2956-1435</a></p>
@@ -217,6 +272,12 @@
     </div>
 
     <script src="./js/master.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+    <script>
+      var mySwiper = new Swiper(".swiper-container", {
+        loop: true
+      });
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
