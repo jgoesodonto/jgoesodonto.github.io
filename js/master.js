@@ -1,6 +1,3 @@
-let year = new Date();
-document.querySelector("#year").textContent = year.getFullYear();
-
 document.querySelectorAll("a[href^='#']").forEach(function(anchor) {
   anchor.addEventListener(
     "click",
@@ -52,3 +49,6 @@ window.addEventListener("scroll", function() {
     document.getElementById("contato_link").style.color = "#7ba3ce";
   }
 });
+
+let year = new Date();
+document.querySelector("#year").textContent = year.getFullYear();
