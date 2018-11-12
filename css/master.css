@@ -22,7 +22,7 @@ nav ul li {
 }
 @media (max-width: 991px) {
   body {
-    padding-bottom: 75px;
+    padding-bottom: 70px;
   }
   nav {
     bottom: 0;
