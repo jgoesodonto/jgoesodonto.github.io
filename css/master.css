@@ -21,6 +21,9 @@ nav ul li {
   text-align: center;
 }
 @media (max-width: 991px) {
+  body {
+    padding-bottom: 90px;
+  }
   nav {
     bottom: 0;
   }
