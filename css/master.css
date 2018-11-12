@@ -36,7 +36,7 @@ nav ul li {
 }
 @media (min-width: 992px) {
   body {
-    padding-top: 90px;
+    padding-top: 80px;
   }
   nav {
     top: 0;
