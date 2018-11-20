@@ -57,7 +57,8 @@ nav ul li {
 nav ul li a:link,
 nav ul li a:visited {
   text-decoration: none;
-  color: gray;
+  color: rgb(37,37,41);
+  background-color: white;
   outline: none;
   display: block;
 }
