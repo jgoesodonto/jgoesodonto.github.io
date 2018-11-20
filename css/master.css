@@ -54,8 +54,7 @@ nav ul li {
     font-weight: 600;
   }
 }
-a:link,
-a:visited {
+a.links {
   color: #24415c;
   text-decoration: underline !important;
 }
