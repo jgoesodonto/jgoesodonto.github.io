@@ -57,6 +57,7 @@ nav ul li {
 a:link,
 a:visited {
   color: #24415c;
+  text-decoration: underline;
 }
 nav ul li a:link,
 nav ul li a:visited {
