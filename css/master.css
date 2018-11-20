@@ -56,12 +56,12 @@ nav ul li {
 }
 a:link,
 a:visited {
-  color: rgb(0, 80, 180);
+  color: #24415c;
 }
 nav ul li a:link,
 nav ul li a:visited {
   text-decoration: none;
-  color: rgb(37,37,41);
+  color: #424242;
   background-color: white;
   outline: none;
   display: block;
