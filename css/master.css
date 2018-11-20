@@ -54,6 +54,10 @@ nav ul li {
     font-weight: 600;
   }
 }
+a:link,
+a:visited {
+  color: rgb(0, 80, 180);
+}
 nav ul li a:link,
 nav ul li a:visited {
   text-decoration: none;
