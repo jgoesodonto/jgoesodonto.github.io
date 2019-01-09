@@ -1,0 +1,99 @@
+nav {
+  background-color: white;
+  position: fixed;
+  height: inherit;
+  z-index: 10;
+}
+
+nav div.row {
+  margin: 0 auto !important;
+}
+
+.tabs .tab a {
+  color: #000;
+  z-index: 0;
+  text-overflow: unset;
+}
+
+.tabs .tab a:hover {
+  background-color: #eee;
+  color: #000;
+}
+.tabs .tab a:visited,
+.tabs .tab a:focus.active {
+  background-color: transparent;
+}
+.tabs .tab a.active {
+  color: #7ba3ce;
+}
+
+.tabs .indicator {
+  background-color: #7ba3ce;
+}
+
+.slider {
+  animation: scaleUpAndDown 60s ease infinite;
+}
+
+@keyframes scaleUpAndDown {
+  0% {
+    -moz-transform: scale(1.15);
+    transform: scale(1.15);
+  }
+  25% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.15);
+    transform: scale(1.15);
+  }
+  75% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(1.15);
+    transform: scale(1.15);
+  }
+}
+
+.slider .indicators {
+  display: none;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.perfil {
+  width: 200px;
+  border-radius: 50%;
+}
+
+@media (max-width: 991px) {
+  body {
+    padding-bottom: 56px;
+  }
+  nav {
+    bottom: 0;
+  }
+  .tabs .indicator {
+    top: 0;
+  }
+  div.valign-wrapper {
+    height: inherit;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+  nav {
+    top: 0;
+  }
+  div.valign-wrapper {
+    height: 208px;
+  }
+}
